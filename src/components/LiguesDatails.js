@@ -5,7 +5,6 @@ import { useLocation } from 'react-router-dom';
 // import { FaMicrophone } from 'react-icons/fa';
 // import { IoChevronBackOutline, IoSettingsOutline } from 'react-icons/io5';
 import { fetchDetails } from './redux/details';
-import leages from './redux/leages';
 
 const LiguesDatails = () => {
   const details = useSelector((state) => state.details);
@@ -29,10 +28,7 @@ const LiguesDatails = () => {
       </div> */}
       <div className="grid-container">
         <div>
-          <h2>
-            Welcome in
-            {leages.id}
-          </h2>
+          <h2>Check all Club info in this Championship</h2>
         </div>
         <div>
           Total teams:
