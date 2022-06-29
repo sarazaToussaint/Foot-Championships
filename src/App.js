@@ -1,10 +1,15 @@
+import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
+import NavLink from './components/NavLink';
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <>
+      <NavLink />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </>
   );
 }
 
