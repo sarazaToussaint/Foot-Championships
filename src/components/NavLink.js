@@ -10,7 +10,7 @@ function NavLink() {
       <Link to="/">
         <IoChevronBackOutline className="backArrow" />
       </Link>
-      <h2>Top teams</h2>
+      <h3>Foot Championships</h3>
       <div className="nav-icons">
         <FaMicrophone />
         <IoSettingsOutline />
