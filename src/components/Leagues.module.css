@@ -1,7 +1,8 @@
 .leagues {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* columns: 2; */
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+
+  columns: 2;
 }
 
 .league {
