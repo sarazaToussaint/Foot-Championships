@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-// import axios from 'axios';
 
 export const getLeagues = createAsyncThunk('leagues/getLeagues', async () => {
   const response = await fetch('https://api-football-standings.azharimm.site/leagues');
@@ -12,14 +11,6 @@ export const getLeagues = createAsyncThunk('leagues/getLeagues', async () => {
   }));
   return leagues;
 });
-// export const getLeagues = () => {
-//   axios.get('https://api-football-standings.azharimm.site/leagues')
-//     .then((res) => {
-//       console.log(res.data);
-//     }).catch((err) => {
-//       console.log(err);
-//     });
-// };
 
 const options = {
   name: 'leagues',
