@@ -9,7 +9,7 @@ const LiguesDatails = () => {
   const details = useSelector((state) => state.details);
   const dispatch = useDispatch();
   const location = useLocation();
-  const { id } = location.state;
+  const { id } = location.state || {};
 
   useEffect(() => {
     dispatch(fetchDetails(id));

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Leagues test renders leagues 1`] = `
+<div
+  className="Container"
+>
+  <div
+    className="totalClub"
+  >
+    Total teams:
+     
+    0
+  </div>
+</div>
+`;
