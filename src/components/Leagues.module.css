@@ -1,6 +1,7 @@
 .leagues {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  /* columns: 2; */
 }
 
 .league {
@@ -9,12 +10,12 @@
   min-height: 10em;
 }
 
-.league:nth-child(4n + 2) {
+.league:nth-child(odd) {
   background-color: #a05784;
 }
 
-.league:nth-child(4n + 3) {
-  background-color: #380625;
+.league:nth-child(even) {
+  background-color: #7a2f55;
 }
 
 .upperLeague {
@@ -28,12 +29,6 @@
   max-width: 90%;
 }
 
-.leagueBtn {
-  border: none;
-  background-color: #4369b2;
-  cursor: pointer;
-}
-
 .leagueName {
   align-self: flex-end;
   color: #fff;
@@ -42,3 +37,7 @@
   font-size: 1.1rem;
   text-decoration: none;
 }
+
+/* .rowbg {
+  background-color: #4369b2;
+} */

@@ -8,14 +8,6 @@
   background-color: #fff;
 }
 
-/*
-.lowerContainer {
-  display: flex;
-  gap: 4em;
-  z-index: 5;
-  padding-bottom: 1em;
-} */
-
 .mainContainer::after {
   content: '';
   position: absolute;
@@ -29,24 +21,11 @@
   opacity: 0.8;
 }
 
-/* .leaguesLogos {
-  padding-left: 1em;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: auto auto;
-  z-index: 3;
-} */
-
 .mainIcon {
   justify-self: flex-end;
   align-self: center;
   margin-right: 1em;
-  color: red;
 }
-
-/* .nav-container p {
-  font-size: 1.1rem;
-} */
 
 .total {
   z-index: 3;

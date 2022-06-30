@@ -1,0 +1,35 @@
+.clubContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 0.3em;
+}
+
+.clubContainer:nth-child(odd) {
+  background-color: #2e1120;
+}
+
+.clubContainer img {
+  width: 30px;
+  height: 30px;
+}
+
+.nameLogo {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.pointsArrow {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.Container {
+  margin: 20px auto;
+}
+
+.totalClub {
+  text-align: center;
+}

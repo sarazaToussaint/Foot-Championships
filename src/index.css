@@ -20,8 +20,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 50px;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #fff;
 }
 
 .backArrow {
   color: #fff;
 }
+
+/*
+.row-bg {
+  background-color: rgb(234, 0, 255);
+} */
