@@ -4,6 +4,7 @@ import { BiRightArrowCircle } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import { getLeagues } from './redux/leages';
 import Leagues from './Leagues';
+import classes from './Home.module.css';
 
 const Home = () => {
   const leagues = useSelector((state) => state.leagues);
@@ -15,15 +16,15 @@ const Home = () => {
 
   return (
     <>
-      <div className="main-container">
-        <p className="total">
+      <div className={classes.mainContainer}>
+        <p className={classes.total}>
           Total Leagues
           &nbsp;
           Available:
           {' '}
           {leagues.length}
         </p>
-        <div className="lower-container">
+        <div className="lowerContainer">
           {/* <div className="leagues-logos">
             {leagues.map((league) => (
               <div key={league.id}>
@@ -34,11 +35,11 @@ const Home = () => {
           </div> */}
           <Link to="/Leagues">
             <BiRightArrowCircle
-              className="main-icon"
+              className={classes.mainIcon}
               style={{
                 width: '25px',
                 height: '25px',
-                color: '#000',
+                color: '#fff',
                 border: 'none',
                 zIndex: '4',
                 opacity: '1',

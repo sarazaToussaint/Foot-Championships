@@ -3,9 +3,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { BiRightArrowCircle } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import { getLeagues } from './redux/leages';
+import classes from './Leagues.module.css';
 
 const Leagues = () => {
   const leagues = useSelector((state) => state.leagues);
+  // const details = useSelector((state) => state.details);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -18,26 +20,25 @@ const Leagues = () => {
         <div>
           <h2>WELCOME TO TOP 20 FIFA LEAGUES</h2>
         </div>
-        <div className="leages" />
-        <div className="leagues">
-          {leagues.map((league) => (
-            <div className="league" key={league.id}>
+        <div className={classes.leagues}>
+          {leagues.map((league, index) => (
+            <div className={(index % 2 === 0) ? 'rowbg' : ''} key={league.id}>
               <Link key={league.id} to={`/${league.id}`} state={{ id: league.id }}>
-                <div className="league" key={league.id}>
+                <div className={classes.league} key={league.id}>
                   <div>
-                    <img src={league.logo} alt={league.name} className="image" />
+                    <img src={league.logo} alt={league.name} className={classes.image} />
                   </div>
-                  <div className="upper-league">
+                  <div className={classes.upperLeague}>
                     <BiRightArrowCircle
-                      className="league-btn"
+                      className={classes.leagueBtn}
                       style={{
                         width: '25px',
                         height: '25px',
-                        color: '#000',
+                        color: '#fff',
                         background: 'transparent',
                       }}
                     />
-                    <p className="league-name">{league.name}</p>
+                    <p className={classes.leagueName}>{league.name}</p>
                   </div>
                 </div>
               </Link>

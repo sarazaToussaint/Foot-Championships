@@ -4,11 +4,32 @@
   padding: 0;
 }
 
-.nav-container {
-  background-color: blue;
+body {
+  background-color: #d25383;
   color: #fff;
+  font-family: 'Gill Sans', sans-serif;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 0.3em;
+}
+
+.nav-container {
+  padding: 0.2em 0.6em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #fff;
 }
 
 .backArrow {
   color: #fff;
 }
+
+/*
+.row-bg {
+  background-color: rgb(234, 0, 255);
+} */
