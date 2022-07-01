@@ -25,14 +25,6 @@ const Home = () => {
           {leagues.length}
         </p>
         <div className="lowerContainer">
-          {/* <div className="leagues-logos">
-            {leagues.map((league) => (
-              <div key={league.id}>
-                <img src={league.logo} alt={league.name}
-                 style={{ width: '25px', height: '25px' }} />
-              </div>
-            ))}
-          </div> */}
           <Link to="/Leagues">
             <BiRightArrowCircle
               className={classes.mainIcon}

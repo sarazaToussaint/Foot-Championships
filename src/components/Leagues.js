@@ -7,7 +7,6 @@ import classes from './Leagues.module.css';
 
 const Leagues = () => {
   const leagues = useSelector((state) => state.leagues);
-  // const details = useSelector((state) => state.details);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -21,10 +20,9 @@ const Leagues = () => {
           <h2>WELCOME TO TOP 20 FIFA LEAGUES</h2>
         </div>
         <div className={classes.leagues}>
-          {leagues.map((league, index) => (
+          {leagues.map((league) => (
             <div className={classes.league} key={league.id}>
               <Link key={league.id} to={`/${league.id}`} state={{ id: league.id }}>
-                {index}
                 <div className={classes.league} key={league.id}>
                   <div>
                     <img src={league.logo} alt={league.name} className={classes.image} />
