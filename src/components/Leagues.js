@@ -22,7 +22,7 @@ const Leagues = () => {
         </div>
         <div className={classes.leagues}>
           {leagues.map((league, index) => (
-            <div className={(index % 2 === 0) ? 'rowbg' : ''} key={league.id}>
+            <div className={classes.league} key={league.id}>
               <Link key={league.id} to={`/${league.id}`} state={{ id: league.id }}>
                 {index}
                 <div className={classes.league} key={league.id}>

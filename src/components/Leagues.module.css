@@ -1,8 +1,7 @@
 .leagues {
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr); */
-
-  columns: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #d25383;
 }
 
 .league {
@@ -11,12 +10,12 @@
   min-height: 10em;
 }
 
-.league:nth-child(odd) {
-  background-color: #a05784;
+.league:nth-child(4n + 2) {
+  background-color: #943f60;
 }
 
-.league:nth-child(even) {
-  background-color: #3d2f7a;
+.league:nth-child(4n + 3) {
+  background-color: #943f60;
 }
 
 .upperLeague {
