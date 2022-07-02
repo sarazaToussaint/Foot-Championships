@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import leaguesSlice from './leages';
 import detailsSlice from './details';
+import leaguesReducer from './league';
 
 const store = configureStore({
   reducer: {
-    leagues: leaguesSlice,
+    leagues: leaguesReducer,
     details: detailsSlice,
   },
 });

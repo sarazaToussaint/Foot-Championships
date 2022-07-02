@@ -38,6 +38,18 @@
   text-decoration: none;
 }
 
-/* .rowbg {
-  background-color: #4369b2;
-} */
+.surchBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  text-align: left;
+  border: black ridge 1px;
+  border-radius: 10px;
+  margin: 3px;
+  width: 20rem;
+  padding-left: 10px;
+}

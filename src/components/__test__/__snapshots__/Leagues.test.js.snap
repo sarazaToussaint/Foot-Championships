@@ -10,6 +10,16 @@ exports[`Leagues test renders leagues 1`] = `
     </h2>
   </div>
   <div
+    className="surchBar"
+  >
+    <input
+      onChange={[Function]}
+      placeholder="Enter league name"
+      type="text"
+      value=""
+    />
+  </div>
+  <div
     className="leagues"
   />
 </div>

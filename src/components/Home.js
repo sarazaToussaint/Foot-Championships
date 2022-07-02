@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { BiRightArrowCircle } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
-import { getLeagues } from './redux/leages';
+import { fetchLeagues } from './redux/league';
 import Leagues from './Leagues';
 import classes from './Home.module.css';
 
@@ -11,7 +11,7 @@ const Home = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getLeagues());
+    dispatch(fetchLeagues());
   }, []);
 
   return (

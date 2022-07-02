@@ -1,23 +1,33 @@
-import React, { useEffect } from 'react';
+/* eslint-disable consistent-return */
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { BiRightArrowCircle } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
-import { getLeagues } from './redux/leages';
+import { fetchLeagues, leaguesFilter } from './redux/league';
 import classes from './Leagues.module.css';
 
 const Leagues = () => {
   const leagues = useSelector((state) => state.leagues);
   const dispatch = useDispatch();
+  const [query, setQuery] = useState('');
 
   useEffect(() => {
-    dispatch(getLeagues());
+    dispatch(fetchLeagues());
   }, [dispatch]);
+
+  const handleChange = (e) => {
+    setQuery(e.target.value);
+    dispatch(leaguesFilter(query));
+  };
 
   return (
     <>
       <div className="grid-container">
         <div>
           <h2>WELCOME TO TOP 20 FIFA LEAGUES</h2>
+        </div>
+        <div className={classes.surchBar}>
+          <input type="text" placeholder="Enter league name" value={query} onChange={handleChange} />
         </div>
         <div className={classes.leagues}>
           {leagues.map((league) => (
