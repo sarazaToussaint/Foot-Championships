@@ -8,14 +8,18 @@ import classes from './Leagues.module.css';
 
 const Leagues = () => {
   const leagues = useSelector((state) => state.leagues);
+
   const dispatch = useDispatch();
   const [query, setQuery] = useState('');
 
   useEffect(() => {
-    dispatch(fetchLeagues());
-  }, [dispatch]);
+    if (!leagues.length) dispatch(fetchLeagues());
+  });
 
   const handleChange = (e) => {
+    if (e.query === '' || e.query === ' ') {
+      dispatch(fetchLeagues().sort());
+    }
     setQuery(e.target.value);
     dispatch(leaguesFilter(query));
   };

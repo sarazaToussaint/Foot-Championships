@@ -43,13 +43,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 16px;
 }
 
-.box {
+input {
   text-align: left;
   border: black ridge 1px;
   border-radius: 10px;
-  margin: 3px;
+  margin: 20px 3px;
   width: 20rem;
+  height: 1.5rem;
   padding-left: 10px;
 }
