@@ -11,10 +11,6 @@ Foot Championships is a mobile friendly webApp that provide leagues standing fro
 - Redux
 - Webpack
 
-## Presentation Video
-
-[Loom video](https://www.loom.com/share/1866e1cbd8624464a701c1d982d990fe)
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
