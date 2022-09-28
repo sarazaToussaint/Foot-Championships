@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Leagues test renders leagues 1`] = `
+<div
+  className="grid-container"
+>
+  <div>
+    <h2>
+      WELCOME TO TOP 20 FIFA LEAGUES
+    </h2>
+  </div>
+  <div
+    className="surchBar"
+  >
+    <input
+      onChange={[Function]}
+      placeholder="Enter league name"
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="leagues"
+  />
+</div>
+`;
