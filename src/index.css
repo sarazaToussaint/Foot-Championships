@@ -5,14 +5,9 @@
 }
 
 body {
-  background-color: #d25383;
+  background-color: #3e61a3;
   color: #fff;
   font-family: 'Gill Sans', sans-serif;
-}
-
-.nav-icons {
-  display: flex;
-  gap: 0.3em;
 }
 
 .nav-container {
@@ -20,11 +15,23 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
-  font-size: 1.4rem;
-  border-bottom: 1px solid #fff;
 }
 
-.backArrow {
-  color: #fff;
+.nav-icons {
+  display: flex;
+  gap: 0.3em;
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 0 20em;
+  }
 }
